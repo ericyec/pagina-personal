@@ -1,5 +1,5 @@
 body {
-    background: lightslategray;
+    background: #ebecf0;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     max-width: 1024px;
@@ -10,7 +10,7 @@ body {
 
 .header-container {
     display: grid;
-    background: lightcoral;
+    background: #253f4f;
     grid-template-columns: 70px 1fr 500px;
     grid-template-rows: 70px;
     grid-template-areas: "logo menu"
@@ -28,6 +28,10 @@ body {
 
 .menu {
     grid-area: menu;
+}
+
+.hero {
+    color: #253f4f;
 }
 
  /* 
