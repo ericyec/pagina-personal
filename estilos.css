@@ -1,26 +1,37 @@
 body {
-    background: #34444C;
+    background: lightslategray;
+    font-family: 'Roboto', sans-serif;
     color: whitesmoke;
+    max-width: 1024px;
 }
 
-.container {
+.header {
+}
+
+.header-container {
     display: grid;
-    grid-gap: 5px;
-    height: 100vh;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 100px);
-    /* grid-template-rows: 50px 100px; */
-
-    /* Centrar contenedor*/
-    justify-content: center;
+    background: lightcoral;
+    grid-template-columns: 70px 1fr 500px;
+    grid-template-rows: 70px;
+    grid-template-areas: "logo menu"
 }
 
-.container h1 {
-    color: white;
+.menu-logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
 }
 
-.item {
-    border: 2px solid red;
-
-    background-color: white;
+.logo {
+    max-width: 50px;
 }
+
+.menu {
+    grid-area: menu;
+}
+
+ /* 
+ #21A6FF 
+ #FF0000
+ #74EA00
+ */
